@@ -18,6 +18,7 @@ c.NotebookApp.port = int(os.environ.get("PORT", 8888))
 c.NotebookApp.allow_root = True
 c.NotebookApp.allow_password_change = True
 c.ConfigurableHTTPProxy.command = ['configurable-http-proxy', '--redirect-port', '80']
+c.NotebookApp.shutdown_no_activity_timeout = 3600
 
 # Configuration file for jupyter-notebook.
 
